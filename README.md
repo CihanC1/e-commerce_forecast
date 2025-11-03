@@ -20,21 +20,21 @@ The project includes data cleaning, feature engineering, time series forecasting
 ```
 e-commerce_forecast/
 │
-├── app.py # Dash dashboard
-├── forecast_model.ipynb # Prophet model and analysis
-├── data/ # Dataset folder
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
+├── app.py 
+├── forecast_model.ipynb 
+├── data/ 
+├── requirements.txt 
+└── README.md 
 ```
 
 ## How to Run
 1. Clone the repository  
 2. Install dependencies:
     ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
 3. python app.py
 4. Open in your browser: http://127.0.0.1:8050/
 
 Author
-Developed by Cihan
+Developed by Cihan Can
 Informatik Student at THWS – focusing on Machine Learning, AI, and Data Analysis.
