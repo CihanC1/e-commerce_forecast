@@ -17,6 +17,7 @@ The project includes data cleaning, feature engineering, time series forecasting
 - Plotly Dash, Prophet  
 
 ## Project Structure
+```
 e-commerce_forecast/
 │
 ├── app.py # Dash dashboard
@@ -24,12 +25,13 @@ e-commerce_forecast/
 ├── data/ # Dataset folder
 ├── requirements.txt # Dependencies
 └── README.md # Project documentation
+```
 
 ## How to Run
 1. Clone the repository  
 2. Install dependencies:
-   *bash*
-   pip install -r requirements.txt
+    ```bash
+   pip install -r requirements.txt```
 3. python app.py
 4. Open in your browser: http://127.0.0.1:8050/
 
