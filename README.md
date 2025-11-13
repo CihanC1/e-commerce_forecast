@@ -29,7 +29,7 @@ e-commerce_forecast/
 
 ## How to Run
 1. Clone the repository  
-2. Install dependencies:
+2. Move to the repository and install dependencies:
     ```bash
    pip install -r requirements.txt
 3. python app.py
