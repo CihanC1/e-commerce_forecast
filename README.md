@@ -46,13 +46,17 @@ temporary files, and Jupyter Notebook checkpoints from version control.
 
 ## How to Run
 1. Clone the repository  
+    ```bash
+   git clone https://github.com/CihanC1/e-commerce_forecast.git
+    ```
 2. Move to the repository and install dependencies:
     ```bash
-   pip install -r requirements.txt
+    cd e-commerce_forecast
+    pip install -r requirements.txt
    ```
 3. Run the application:
     ```bash
-   python app.py
+    python app.py
    ```
 4. Open in your browser: 
     ```md
