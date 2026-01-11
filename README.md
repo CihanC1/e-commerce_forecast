@@ -22,21 +22,25 @@ in an interactive web dashboard.
 
 
 ## Tech Stack
-- Python 3.12  
+- Python 3.10+  
 - Pandas, NumPy, Scikit-learn  
 - Plotly Dash, Prophet  
+- Docker (optional)
 
 ## Project Structure
 ```
 e-commerce_forecast/
 │
-├── app.py 
-├── e_commerce_project.ipynb 
+├── app.py
+├── e_commerce_project.ipynb
 ├── data/
-│ ├── data.csv
-│ └── comparison.csv
-├── requirements.txt 
-└── README.md 
+│   ├── data.csv
+│   └── comparison.csv
+├── requirements.txt
+├── Dockerfile
+├── .gitignore
+└── README.md
+
 ```
 
 ## Version Control
@@ -48,17 +52,28 @@ temporary files, and Jupyter Notebook checkpoints from version control.
 1. Clone the repository  
     ```bash
    git clone https://github.com/CihanC1/e-commerce_forecast.git
+   cd e-commerce_forecast
     ```
-2. Move to the repository and install dependencies:
+2. Create and activate a virtual environment:
+    Windows(Powershell/CMD)
     ```bash
-    cd e-commerce_forecast
+    python -m venv .venv
+    .venv\Scripts\activate
+   ```
+    macOS / Linux:
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+   ```
+3. Install dependencies:
+    ```bash
     pip install -r requirements.txt
    ```
-3. Run the application:
+4. Run the application:
     ```bash
     python app.py
    ```
-4. Open in your browser: 
+5. Open in your browser: 
     ```md
     http://127.0.0.1:8050/
     ```
@@ -68,7 +83,8 @@ temporary files, and Jupyter Notebook checkpoints from version control.
 The project can also be run inside a Docker container.
 1. Build the Docker image:
     ```bash
-   docker build -t e-commerce-forecast .
+    cd e-commerce_forecast
+    docker build -t e-commerce-forecast .
    ```
 2. Run the Docker container:
     ```bash
